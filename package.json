@@ -1,0 +1,15 @@
+{
+  "name": "@codeforamerica/uswds-starter",
+  "version": "0.0.1-alpha.1",
+  "description": "A minimal template for a Node.js based front-end development environment to manage the Code for America USWDS theme.",
+  "license": "MIT",
+  "scripts": {
+    "default": "NODE_ENV=production npm run styles && NODE_ENV=production npm run scripts",
+    "styles": "node node_modules/@codeforamerica/uswds/styles.js",
+    "scripts": "node node_modules/@codeforamerica/uswds/scripts.js",
+    "copy": "cp -a node_modules/@codeforamerica/uswds/dist/assets/fonts dist/assets/fonts && cp -a node_modules/@codeforamerica/uswds/dist/assets/img dist/assets/img"
+  },
+  "dependencies": {
+    "@codeforamerica/uswds": "^0.0.1-alpha.1"
+  }
+}
